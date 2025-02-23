@@ -5,7 +5,7 @@ pygame.mixer.init()
 
 WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Third Game!")
+pygame.display.set_caption("Galaxy Fighters Game!")
 
 WHITE = ((255, 255, 255))
 BLACK = (0, 0, 0)
@@ -42,8 +42,8 @@ def draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_hea
    WIN.blit(SPACE, (0, 0))
    pygame.draw.rect(WIN, BLACK, BORDER) 
 
-   red_health_text = HEALTH_FONT.render("Health: " + str(red_health), 1, WHITE)
-   yellow_health_text = HEALTH_FONT.render("Health: " + str(yellow_health), 1, WHITE)
+   red_health_text = HEALTH_FONT.render("Health: " + str(red_health), 1, RED)
+   yellow_health_text = HEALTH_FONT.render("Health: " + str(yellow_health), 1, YELLOW)
    WIN.blit(red_health_text, (WIDTH - red_health_text.get_width() - 10, 10))
    WIN.blit(yellow_health_text, (10, 10))
 
