@@ -1,4 +1,6 @@
+# I start with importing the pygame module.
 import pygame
+# then I am importing the os module.
 import os
 pygame.font.init()
 pygame.mixer.init()
