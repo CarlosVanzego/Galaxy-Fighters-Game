@@ -2,11 +2,16 @@
 import pygame
 # then I am importing the os module.
 import os
+# 
 pygame.font.init()
+# 
 pygame.mixer.init()
 
+# 
 WIDTH, HEIGHT = 900, 500
+# 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+# 
 pygame.display.set_caption("Galaxy Fighters Game!")
 
 WHITE = ((255, 255, 255))
